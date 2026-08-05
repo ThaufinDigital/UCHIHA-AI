@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCHIHA AI - Asisten Cerdas</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Mengambil ikon dari FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Kiri -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h2>UCHIHA AI</h2>
+            </div>
+            <button class="new-chat"><i class="fas fa-plus"></i> Chat Baru</button>
+            <div class="history">
+                <p class="history-title">Riwayat Hari Ini</p>
+                <ul>
+                    <li><i class="far fa-message"></i> Ide Hook Video TikTok...</li>
+                    <li><i class="far fa-message"></i> Desain Logo Minimalis...</li>
+                    <li><i class="far fa-message"></i> Copywriting Produk...</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Area Chat Utama -->
+        <main class="chat-container">
+            <header class="chat-header">
+                <h3>Model: <span>Uchiha-Pro</span></h3>
+            </header>
+
+            <div class="chat-box" id="chat-box">
+                <!-- Pesan Sambutan dari AI -->
+                <div class="message ai-message">
+                    <div class="avatar"><i class="fas fa-robot"></i></div>
+                    <div class="content">
+                        Halo, Saya Uchiha AI. Ada yang bisa saya bantu hari ini terkait perancangan konten viral, caption, atau ide desain kreatif Anda?
+                    </div>
+                </div>
+            </div>
+
+            <!-- Area Input Teks -->
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="user-input" placeholder="Ketik prompt atau pesan Anda di sini..." autocomplete="off">
+                    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <p class="disclaimer">Nexus AI adalah prototipe antarmuka. Anda dapat menghubungkannya dengan API nyata nantinya.</p>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
